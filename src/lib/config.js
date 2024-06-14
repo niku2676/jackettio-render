@@ -4,9 +4,9 @@ export default {
   // https://expressjs.com/en/guide/behind-proxies.html
   trustProxy: boolOrString(process.env.TRUST_PROXY || 'loopback, linklocal, uniquelocal'),
   // Jacket instance url
-  jackettUrl: process.env.JACKETT_URL || 'http://localhost:9117',
+  jackettUrl: process.env.JACKETT_URL || '=https://jackett-7608b969582c.herokuapp.com:46674',
   // Jacket API key
-  jackettApiKey: process.env.JACKETT_API_KEY || '',
+  jackettApiKey: process.env.JACKETT_API_KEY || 'jc5qg19auwvi6k73tw48v7wpxn5sv0sf',
   //  The Movie Database Access Token. Configure to use TMDB rather than cinemeta.
   tmdbAccessToken: process.env.TMDB_ACCESS_TOKEN || '', 
   // Data folder for cache database, torrent files ... Must be persistent in production
