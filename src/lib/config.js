@@ -4,7 +4,7 @@ export default {
   // https://expressjs.com/en/guide/behind-proxies.html
   trustProxy: boolOrString(process.env.TRUST_PROXY || 'loopback, linklocal, uniquelocal'),
   // Jacket instance url
-  jackettUrl: process.env.JACKETT_URL || '=https://jackett-7608b969582c.herokuapp.com:46674',
+  jackettUrl: process.env.JACKETT_URL || 'https://jackett-7608b969582c.herokuapp.com:46674',
   // Jacket API key
   jackettApiKey: process.env.JACKETT_API_KEY || 'jc5qg19auwvi6k73tw48v7wpxn5sv0sf',
   //  The Movie Database Access Token. Configure to use TMDB rather than cinemeta.
