@@ -1,7 +1,7 @@
 FROM node:20-slim
 
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app \
-  && mkdir -p /data && chown -R node:node /data
+  && mkdir -p /data && chown -R node:node /data && --env-file .env
 
 WORKDIR /home/node/app
 
@@ -10,8 +10,6 @@ COPY --chown=node:node package*.json ./
 USER node
 
 RUN npm install
-
-RUN --env-file .env
 
 COPY --chown=node:node ./src ./src
 
