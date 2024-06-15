@@ -3,7 +3,3 @@ node_modules
 
 # Composes
 docker-compose-dev.yml
-
-# Ignore environment files
-.env
-.env.*
