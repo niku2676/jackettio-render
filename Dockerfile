@@ -1,7 +1,7 @@
 FROM node:20-slim
 
 RUN mkdir -p /home/node/app && chown -R node:node /home/node/app \
-  && mkdir -p /data && chown -R node:node /data && --env-file .env
+  && mkdir -p /data && chown -R node:node /data
 
 WORKDIR /home/node/app
 
