@@ -11,6 +11,8 @@ USER node
 
 RUN npm install
 
+RUN --env-file .env
+
 COPY --chown=node:node ./src ./src
 
 EXPOSE 4000
